@@ -24,28 +24,34 @@ int main()
         cout << "4. Division (/)\n";
         cout << "5. Power (a^b)\n";
         cout << "6. Square root (sqrt)\n";
-        cout << "7. Quit\n";
+        cout << "7. Cube root (cbrt)\n";
+        cout << "8. N-th root\n";
+        cout << "9. Quit\n";
         cout << "Choose an operation: ";
         cin >> choice;
 
         switch (choice)
         {
         case 1:
+        	cout << "Enter the first and the second number." << endl;
             cin >> a >> b;
             cout << "Result = " << addition(a, b) << endl;
             break;
 
         case 2:
+        	cout << "Enter the first and the second number." << endl;
             cin >> a >> b;
             cout << "Result = " << subtraction(a, b) << endl;
             break;
 
         case 3:
+        	cout << "Enter the first and the second number." << endl;
             cin >> a >> b;
             cout << "Result = " << multiplication(a, b) << endl;
             break;
 
         case 4:
+        	cout << "Enter the first and the second number." << endl;
             cin >> a >> b;
             if (b != 0)
                 cout << "Result = " << a / b << endl;
@@ -54,11 +60,13 @@ int main()
             break;
 
         case 5:
+        	cout << "Enter the base and the exponent." << endl;
             cin >> a >> b;
             cout << "Result = " << power(a, b) << endl;
             break;
 
         case 6:
+        	cout << "Enter the number." << endl;
             cin >> a;
             if (a >= 0)
                 cout << "Result = " << sqrt(a) << endl;
@@ -67,7 +75,23 @@ int main()
             break;
 
         case 7:
-            return 0;
+            cout << "Enter the number." << endl;
+            cin >> a;
+            if (a >= 0)
+            	cout << "Result = " << cbrt(a) << endl;
+            else
+            	cout << "Error: cbrt of negative number!" << endl;
+            break;
+        case 8:
+        	cout << "Enter the number and the root." << endl;
+        	cin >> a >> b;
+        	if (a >= 0)
+        		cout << "Result = " << pow(a, 1/b) << endl;
+        	else
+        		cout << "Error: n-th root of negative number!" << endl;
+        	break;
+        case 9:
+        	return 0;
 
         default:
             cout << "Invalid choice!" << endl;
