@@ -17,6 +17,15 @@ look if you want to understand better but basically, i separed the simple operat
 Now I quiet understood the way to perform, i will add some more complexe operation.
 See you soon :)
 
+  #### 27/01/2026:
+Today I changed again the structure to make it easy to read and to understand.
+I also did a great changement on the general structure. before, there was many decision like: "do you want to use simple operation"... 
+now, there is only one menu with all operation. I found a way to use efficiently functions and same variable for every operation. so
+I can save storage, make my code easy to maintain. 
+I add also the square root operation. Now my goal is to add cube root (cbrt) and n-th root which is more complicate to perform. I am
+now working on it.
+See you soon ;)
+
 
 
 ### The goal of this program is to practice, and to understand C++. we will try to use tools as many as possible C++ can alowed us to do. follow my growing in c++;
