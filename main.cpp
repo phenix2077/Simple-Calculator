@@ -13,20 +13,22 @@ int main()
 {
     int choice;
     double a, b;		// a and b are number input by the user.
+    int num1, num2;		// num1 and num2 are number input by the user for modulus operation
     char quit;
 
     do
     {
-        cout << "\n===== CALCULATOR =====\n";
+        cout << "\n===== CALCULATOR =====\n\n";
         cout << "1. Addition (+)\n";
         cout << "2. Subtraction (-)\n";
         cout << "3. Multiplication (*)\n";
         cout << "4. Division (/)\n";
-        cout << "5. Power (a^b)\n";
-        cout << "6. Square root (sqrt)\n";
-        cout << "7. Cube root (cbrt)\n";
-        cout << "8. N-th root\n";
-        cout << "9. Quit\n";
+        cout << "5. Modulus (a%b)\n";
+        cout << "6. Power (a^b)\n";
+        cout << "7. Square root (sqrt)\n";
+        cout << "8. Cube root (cbrt)\n";
+        cout << "9. N-th root\n";
+        cout << "10. Quit\n";
         cout << "Choose an operation: ";
         cin >> choice;
 
@@ -58,14 +60,22 @@ int main()
             else
                 cout << "Error: division by zero!" << endl;
             break;
-
         case 5:
+        	cout << "Enter the first and the second number." << endl;
+        	cin >> num1 >> num2;
+        	if (num2 != 0)
+        		cout << "Result = " << num1 % num2 << endl;
+        	else
+        		cout << "Error: divison by zero!" << endl;
+        	break;
+
+        case 6:
         	cout << "Enter the base and the exponent." << endl;
             cin >> a >> b;
             cout << "Result = " << power(a, b) << endl;
             break;
 
-        case 6:
+        case 7:
         	cout << "Enter the number." << endl;
             cin >> a;
             if (a >= 0)
@@ -74,7 +84,7 @@ int main()
                 cout << "Error: sqrt of negative number!" << endl;
             break;
 
-        case 7:
+        case 8:
             cout << "Enter the number." << endl;
             cin >> a;
             if (a >= 0)
@@ -82,7 +92,7 @@ int main()
             else
             	cout << "Error: cbrt of negative number!" << endl;
             break;
-        case 8:
+        case 9:
         	cout << "Enter the number and the root." << endl;
         	cin >> a >> b;
         	if (a >= 0)
@@ -90,7 +100,7 @@ int main()
         	else
         		cout << "Error: n-th root of negative number!" << endl;
         	break;
-        case 9:
+        case 10:
         	return 0;
 
         default:
