@@ -26,6 +26,12 @@ I add also the square root operation. Now my goal is to add cube root (cbrt) and
 now working on it.
 See you soon ;)
 
+  #### 28/01/2026:
+Yes, I am working more these three days and it's because I am done with my exams. Any way, today i add the modulus operator and it was 
+complicated because modulus only return integers (int) so i created two more variables for modulus (num1 and num2) as you can see in the 
+source code. So... yeah, that's all for today.
+See you soon 😄 (I just discover that i can add emoji 😆).
+
 
 
 ### The goal of this program is to practice, and to understand C++. we will try to use tools as many as possible C++ can alowed us to do. follow my growing in c++;
